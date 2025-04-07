@@ -1,0 +1,68 @@
+
+<style>
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(239, 110, 170, 0.5);
+    padding: 20px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ff3366;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: #c6f128;
+    transition: color 0.3s ease;
+}
+
+.search-icons {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+</style>
+
+<header>
+    <div class="logo">Flower</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="search-icons">
+        <form action="/search" method="get" class="search-form">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit"><i class="bi bi-search"></i></button>
+            <button type="submit"> <i class="bi bi-suit-heart"></i></button>
+            <button type="submit"> <i class="bi bi-cart3"></i></button>
+        </form>
+    </div>
+</header>
